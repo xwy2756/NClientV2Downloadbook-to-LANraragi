@@ -77,7 +77,7 @@ Since English is not my native language, so
 
 !!!!!!!!! Machine Translation WARNING!!!!!!!!!
 
-!!!!!I'm not sure how this will affect Lanrargi,if which has comics from other sources, and I highly recommend exporting a backup Lanrargi file as a backup before you start!!!!!
+!!!!!If which has comics from other sources,I'm not sure how this will affect Lanrargi, and I highly recommend exporting a backup Lanrargi file as a backup before you start!!!!!
 
 Upload the NClientV2 downloaded book to LANraragi and save the corresponding Tag
 
