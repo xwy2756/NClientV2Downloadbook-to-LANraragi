@@ -133,12 +133,12 @@ Each time the script is run, it finds a new Tag from the existing book and adds 
 
 Tag.py is structured like python's dict:
 
-    TagDictionaries = {
-        'bdsm': 'Sexual abuse ',
-        'multi-work series': None,
-        'collar': 'collar',
-        'dark skin': 'dark skin',
-        'anal': 'anal'
+    TagDictionaries = { 
+           'bdsm': '性虐待',
+           'multi-work series': None,
+           'collar': '项圈',
+           'dark skin': '深色皮肤',
+           'anal': '肛门'
     }
 
 On the left is the original tag name, and on the right is the translated name. None indicates no translation
