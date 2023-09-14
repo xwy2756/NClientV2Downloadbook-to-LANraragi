@@ -21,13 +21,14 @@
   
   TranslateTag.py ---- Tag翻译脚本
   
-  Tag.py ---- 无作用,仅作Tag存储
+  Tag.py ---- 无作用,仅作Tag翻译表储存用
   
   main.py ---- 脚本入口
 
 如何使用:
 
-  首先你需要一个安装了alive-progress的python解释器,在main脚本下有几个变量:
+  首先你需要一个安装了alive-progress的python解释器(或者编辑main脚本,注释掉第9行,并且把其中的Task函数下的内容替换为pass),然后使用pycharm或者类似的可以建立python工程的软件建立一个python工程,并把这个库里面的东西放进去.
+  接下来打开并编辑mian脚本,在main脚本下有几个变量:
   
           BookSourcePath ---- 你NClientV2的下载文件夹
           
@@ -46,7 +47,7 @@
   
   等待LANraragi上传结束,你可能需要一点时间来等待LANraragi处理内部数据库.LANraragi处理内部数据库完成后,请导出LANraragi备份文件,这是个.json格式文件
   
-  让我们回到main,此时脚本应该会提示你备份文件出错,请按照提示输入对应的单词继续脚本并等待脚本处理备份文件.
+  让我们回到main,此时脚本应该会提示你备份文件出错,请按照提示输入对应的单词继续脚本并等待脚本处理备份文件.如果一直重复错误过程,请检查BackupFilePath变量下的路径下是否存在最新的备份文件
   
   当脚本处理结束后,请把备份文件导入至LANraragi,你就能在LANraragi中浏览你在NClientV2下载的本子了
 
@@ -67,3 +68,85 @@
   左边是原始tag名称,右边是翻译过后的名称.None代表暂无翻译
          
   你只需要手动在这里更改键值对就能更改脚本执行时对应修改的tag翻译
+  如果你不需要翻译,删除Tag.py里面的所有内容并保存即可(不要删除Tag.py文件)
+
+
+Since English is not my native language, so
+
+!!!!!!!!! Machine Translation WARNING!!!!!!!!!
+
+Upload the NClientV2 downloaded book to LANraragi and save the corresponding Tag
+
+Statement:
+
+I'm using github for the first time, this thing is a little advanced, the library is wrong, please forgive me.
+
+Script description:
+
+This is a download from the NClientV2 folder, compress the books, and sort the books in order of modification time. Then upload to LANraragi and modify the corresponding book sub-properties in the LANraragi backup file
+
+!!!!!!!!! This is not a one-click dumb script. You need to manually move the book to the LANraragi directory and manually get the LANraragi backup file!!!
+
+File function:
+
+    CommonFuntion.py ---- Common function library 
+    
+    Format. py ---- LANraragi backup file processing script 
+    
+    Zip.py ---- Compress the script
+    
+    TranslateTag.py ---- Tag translates the script
+    
+    Tag.py ---- has no effect and is only used to store Tag translation tables
+    
+    main.py ---- script entry
+
+How to use:
+
+First you need a python interpreter with alive-progress installed (or edit the main script, comment out line 9, and replace the contents of the Task function with pass), and then create a python project using pycharm or similar software that can create python projects Cheng, and put in the contents of this vault.
+
+Next open and edit the mian script, which has several variables under the main script:
+
+    BookSourcePath ---- The download folder of your NClientV2
+    
+    ZipSavePath ---- The directory where you want to store the zip package
+    
+    BackupFilePath ---- LANraragi directory of the backup file
+    
+    TagFileName ---- stores the file for the Tag translation table, which does not need to be changed
+    
+    ProcessNumber ---- Number of cpu cores to be used (2 is best, I don't know why any higher than 2 would cause the process to stall)
+
+Change BookSourcePath to the download folder of your NClientV2, change ZipSavePath to the directory you want, and BackupFilePath to the location where your backup files are likely to be saved, then run main and wait for the compression to finish.
+
+At this point, the NClientV2 file you downloaded will be compressed in chronological order and renamed to a numeric sequence number. After the compression is complete, please upload these compressed packages to LANraragi to begin the second step.
+
+Wait for the LANraragi upload to finish, you may need a little time for LANraragi to process the internal database. After LANraragi finishes processing the internal database, export the LANraragi backup file, which is a.json file
+
+Let's go back to main. At this point, the script should prompt you to backup the file error, please follow the prompt to enter the corresponding word to continue the script and wait for the script to process the backup file. If the error process keeps repeating, check whether the latest backup file exists in the directory under the BackupFilePath variable
+
+When the script is finished, please import the backup file to LANraragi and you will be able to browse the book you downloaded from NClientV2 in LANraragi
+
+About Tag Translation:
+
+Each time the script is run, it finds a new Tag from the existing book and adds it to tag.py.
+
+Tag.py is structured like python's dict:
+
+    TagDictionaries = {
+        'bdsm': 'Sexual abuse ',
+        'multi-work series': None,
+        'collar': 'collar',
+        'dark skin': 'dark skin',
+        'anal': 'anal'
+    }
+
+On the left is the original tag name, and on the right is the translated name. None indicates no translation
+
+
+
+You only need to manually change the key-value pairs here to change the tag translation corresponding to the modifications when the script is executed
+
+If you don't need to translate, just delete everything in Tag.py and save it (don't delete Tag.py file)
+
+ 
