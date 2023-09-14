@@ -103,7 +103,7 @@ File function:
 
 How to use:
 
-First you need a python interpreter with alive-progress installed (or edit the main script, comment out line 9, and replace the contents of the Task function with pass), and then create a python project using pycharm or similar software that can create python projects Cheng, and put in the contents of this vault.
+First you need a python interpreter with alive-progress installed (or edit the main script, comment out line 9, and replace the contents of the Task function with pass), and then create a python project using pycharm or similar software that can create python projects software, and put in the contents of this vault.
 
 Next open and edit the mian script, which has several variables under the main script:
 
