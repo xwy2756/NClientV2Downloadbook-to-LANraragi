@@ -4,6 +4,8 @@
 声明:
 
 我第一次使用github,这东西有点高级,库有不对请见谅.
+
+!!!我不知道这对有着其他来源漫画的Lanrargi有何副作用,我强烈建议您开始之前导出一份Lanrargi备份文件作为备份!!!
     
 脚本说明:
 
@@ -74,6 +76,8 @@
 Since English is not my native language, so
 
 !!!!!!!!! Machine Translation WARNING!!!!!!!!!
+
+!!!!!I'm not sure how this will affect Lanrargi,if which has comics from other sources, and I highly recommend exporting a backup Lanrargi file as a backup before you start!!!!!
 
 Upload the NClientV2 downloaded book to LANraragi and save the corresponding Tag
 
